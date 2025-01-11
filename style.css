@@ -72,7 +72,7 @@ button{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .result{
@@ -81,8 +81,15 @@ button{
     gap: 20px;
 }
 
-#to-input{
-    font-size: 25px;
+
+#from-input, #to-input{
     text-align: center;
-    margin-top: 30px;
+    width: 100%;
+}
+
+#to-input{
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 25px;
+    background-color: #17181A;
 }
