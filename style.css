@@ -93,3 +93,24 @@ button{
     font-size: 25px;
     background-color: #17181A;
 }
+
+@media screen and (max-width: 380px){
+    main{
+        width: 300px;
+        height: 500px;
+    }
+    
+    .container{
+        height: 330px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    #to-input{
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
