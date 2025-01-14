@@ -14,7 +14,7 @@
         .gombok {
             display: flex;
             justify-content: space-around;
-            align-items: center;
+            margin-top: 10vw;
         }
         .gombok button{
             width: 10vw ;
@@ -26,13 +26,39 @@
             cursor: pointer;
             
         }
+        .gombok button:hover {
+            border: 0.3vw solid white;
+        }
+        .gombok button:active {
+            box-shadow: none;
+            transform: translateY(0.5vw); }
+        
+        @media (max-width: 768px) {
+            .gombok {
+                flex-direction: column;
+                align-items: center;
+            }
+            .gombok button {
+                margin-top: 5vw;
+            }
+            body {
+                background-repeat: repeat-y;
+            }
+        }
+        
     </style>
 </head>
 <body>
+    <script >
+        function playSound(a) {
+            var audio = new Audio(a);
+            audio.play();
+        }
+    </script>
     <div class="gombok">
-        <button></button>
-        <button></button>
-        <button></button>
+        <button onclick="playSound('assets/pluh.mp3')"></button>
+        <button onclick="playSound('assets/romanceeeeeeeeeeeeee.mp3')"></button>
+        <button onclick="playSound('assets/goofy-ahh-car-horn-sound-effect.mp3')"></button>
     </div>
     
 </body>
