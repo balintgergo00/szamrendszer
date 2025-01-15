@@ -32,10 +32,23 @@
         .gombok button:active {
             box-shadow: none;
             transform: translateY(0.5vw); }
-        #bgmusic {
-            volume: 0.1;
+        #vissza {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-size: 2vw;
+            color: white;
+            cursor: pointer;
+            padding: 0.5vw;
+            border-radius: 1vw;
+            margin: 2vw;
+            font-style: bold;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(2, 66, 2);
         }
-        
+        #vissza:hover {
+            background-color: rgb(0, 128, 0);
+        }
         @media (max-width: 768px) {
             .gombok {
                 flex-direction: column;
@@ -58,23 +71,28 @@
             var muzsika = new Audio(a);
             muzsika.play();
             var bg = b;
+            if (bg == 'assets/mucsi_zoltan.jpg') {
+                setTimeout(function() {
+                document.body.style.backgroundImage = "url(assets/mucsi_zoltan.jpg)";
+            }, 100);
+            }
             document.body.style.backgroundImage = "url(" + bg + ")";
             setTimeout(function() {
                 document.body.style.backgroundImage = "url(assets/mucsi_zoltan.jpg)";
             }, 2100);
         }
-        function backgroundmusic() {
-            var audio = new Audio('assets/romanceeeeeeeeeeeeee.mp3');
-            audio.play();
-        }
     </script>
-    <audio src="assets/romanceeeeeeeeeeeeee.mp3" onload="backgroundmusic()" id="bgmusic"></audio>
+    <audio autoplay loop id="bgmusic" onplay="this.volume=0.2">
+        <source src="assets/romanceeeeeeeeeeeeee.mp3" type="audio/mpeg" >
+    </audio>
     <!-- eateregg -->
     <div class="gombok">
         <button onclick="playSound('assets/gyere-mar.mp3', 'assets/mucsi_zoltan.jpg')"></button>
         <button onclick="playSound('assets/ne-karmold-szet-2.mp3', 'assets/mucsi_zoltan.jpg')"></button>
         <button onclick="playSound('assets/csaltam-az-erettsegin.mp3', 'assets/easy.gif')"></button>
     </div>
-    
+    <div>
+        <h1 id="vissza" onclick="window.location.href= 'szamrendszer.html'; ">vissza</h1>
+    </div>
 </body>
 </html>
