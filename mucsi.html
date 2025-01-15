@@ -69,6 +69,7 @@
     <script >
         function playSound(a, b) {
             var muzsika = new Audio(a);
+            muzsika.volume = 1;
             muzsika.play();
             var bg = b;
             if (bg == 'assets/mucsi_zoltan.jpg') {
