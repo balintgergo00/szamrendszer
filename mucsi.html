@@ -32,6 +32,9 @@
         .gombok button:active {
             box-shadow: none;
             transform: translateY(0.5vw); }
+        #bgmusic {
+            volume: 0.1;
+        }
         
         @media (max-width: 768px) {
             .gombok {
@@ -45,21 +48,32 @@
                 background-repeat: repeat-y;
             }
         }
+
         
     </style>
 </head>
 <body>
     <script >
-        function playSound(a) {
+        function playSound(a, b) {
             var muzsika = new Audio(a);
             muzsika.play();
+            var bg = b;
+            document.body.style.backgroundImage = "url(" + bg + ")";
+            setTimeout(function() {
+                document.body.style.backgroundImage = "url(assets/mucsi_zoltan.jpg)";
+            }, 2100);
+        }
+        function backgroundmusic() {
+            var audio = new Audio('assets/romanceeeeeeeeeeeeee.mp3');
+            audio.play();
         }
     </script>
+    <audio src="assets/romanceeeeeeeeeeeeee.mp3" onload="backgroundmusic()" id="bgmusic"></audio>
     <!-- eateregg -->
     <div class="gombok">
-        <button onclick="playSound('assets/pluh.mp3')"></button>
-        <button onclick="playSound('assets/romanceeeeeeeeeeeeee.mp3')"></button>
-        <button onclick="playSound('assets/goofy-ahh-car-horn-sound-effect.mp3')"></button>
+        <button onclick="playSound('assets/gyere-mar.mp3', 'assets/mucsi_zoltan.jpg')"></button>
+        <button onclick="playSound('assets/ne-karmold-szet-2.mp3', 'assets/mucsi_zoltan.jpg')"></button>
+        <button onclick="playSound('assets/csaltam-az-erettsegin.mp3', 'assets/easy.gif')"></button>
     </div>
     
 </body>
