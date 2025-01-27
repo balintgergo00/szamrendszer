@@ -61,6 +61,12 @@ input{
     border: none;
 }
 
+span{
+    text-align: center;
+    font-size: 30px;
+}
+
+
 button{
     background-color: #17181A;
     color: white;
