@@ -17,6 +17,7 @@ body {
     background-color: #DAF0FF;
     align-items: center;
     display: flex;
+    flex-direction: column;
     font-family: "Poppins", serif;
     height: inherit;
     justify-content: center;
@@ -100,6 +101,36 @@ button{
     background-color: #17181A;
 }
 
+.info {
+    transition: 0.3s all;
+    cursor: pointer;
+    position:static;
+    background-color: #577dc9;
+    border: none;
+    width: 2.3vw;
+    height: 2.3vw;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+
+}
+.info:hover {
+
+    width: 12vw;
+    /* transition: 0.2s all; */
+    font-size: 0.7vw;
+    border-radius: 0.5vw;
+
+
+
+}
+.info:active {
+    color: #475570;
+}
 @media screen and (max-width: 380px){
     main{
         width: 300px;
