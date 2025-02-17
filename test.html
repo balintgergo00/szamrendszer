@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/feladat.css">
+</head>
+<body>
+    
+    <script>
+        function check(h) {
+            if (h == "jo") {
+                document.getElementById("Eredmény").innerHTML = "Talált!";
+            } else {
+                document.getElementById("Eredmény").innerHTML = "nahh";
+            }
+
+        }
+        function myFunction() {
+            var x = document.getElementById("szam").value;
+            if (x == 1010) {
+                document.getElementById("Eredmény").innerHTML = "Talált!";
+            } else {
+                document.getElementById("Eredmény").innerHTML = "nahh";
+            }
+        }
+        </script>
+    <div class="feladat">
+        <h3 class="leiras">Váltsd át a megadott számot kettes SZÁMRENDSZERBE</h3> <br>
+        <div class="input">
+        <input type="number" id="szam" name="szam">
+        <input type="submit" value="Submit" onclick="myFunction()">
+    </div>
+        
+    </div>
+    <p id="Eredmény"></p>
+<div class="feladat">
+    <h1>10</h1>
+        <h2>váltsd át kettes számrendszerbe</h2>
+        <button onclick="check('jo')">1010</button>
+        <button onclick="check('rossz')">654</button>
+        <button onclick="check('rossz')">8976</button>
+        <button onclick="check('rossz')">656754</button>
+        <button onclick="check('rossz')">74754</button>
+    </div>
+</body>
+</html>
