@@ -1,0 +1,22 @@
+.feladat {
+
+    height: 10vw;
+    background-color: rgba(97, 175, 66, 0.349);
+    width: 100%;
+    
+}
+.leiras {
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    padding: 1vw;
+}
+.input {
+    background-color: #fefeff;
+    color: white;
+    padding: 1vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+}
