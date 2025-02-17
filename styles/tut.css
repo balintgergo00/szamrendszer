@@ -41,3 +41,26 @@ body{
   background-color: #DAF0FF;
 
 }
+
+.bal{
+float: left;
+margin-top: 6vw;
+margin-left: 3vw;
+
+
+
+
+}
+
+.listaa{
+text-decoration: none;
+color: black;
+list-style-image:none;
+font-size: 2vw;
+font-family:'Russo One', sans-serif ;
+
+}
+
+ul, li {
+  list-style-type: none;
+}
