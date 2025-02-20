@@ -58,9 +58,36 @@ color: black;
 list-style-image:none;
 font-size: 2vw;
 font-family:'Russo One', sans-serif ;
+margin-left: 10vw;
 
 }
 
 ul, li {
   list-style-type: none;
+  margin-bottom: 5vw;
+}
+
+
+.jobb{
+
+float: right;
+margin-top: 2vw;
+margin-right: 4vw;
+background-color: whitesmoke;
+
+
+}
+
+#kep{
+border-radius: 30px;
+box-shadow:0.8vw 1.5vw 2vw #013357 ;
+}
+
+
+#cim{
+  font-family:'Russo One', sans-serif;
+margin-bottom: 1vw;
+margin-left: 2vw;
+
+
 }
