@@ -17,7 +17,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #173c57;
     font-family: "Poppins", serif;
     display: flex;
     justify-content: center;
@@ -50,8 +50,9 @@ ul {
 
 
 hr{
-    height: 400px;
+    height: 800px;
     width: 0.1vw;
+    margin-top: 50px;
 }
 
 .container {
@@ -69,4 +70,20 @@ hr{
     text-align: center;
     margin-top: 3vw;
 }
-    
+
+.szoveg{
+  height: 250px;
+}
+
+.kep{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.kep img{
+  border-radius: 50px;
+  box-shadow:5px 5px 70px #263b49, -5px -5px 70px #173c57;
+  width: 350px;
+  height: 300px;
+}
