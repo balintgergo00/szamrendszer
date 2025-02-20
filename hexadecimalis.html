@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számrendszer átváltó</title>
+    <link rel="stylesheet" href="./styles/gyakszi.css">
+</head>
+<body>
+    <ul>
+        <li><a href="tutorial.html">FŐOLDAL</a></li>
+        <li class="csik">|</li>
+        <li><a href="binaris.html">BINÁRIS</a></li>
+        <li class="csik">|</li>
+        <li><a class="active" href="hexadecimális.html">HEXADECIMÁLIS</a></li>
+        <li class="csik">|</li>
+        <li><a href="oktalis.html">OKTÁLIS</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="bal">
+            <div class="szoveg">
+                <h1>10-es számrenszerből 16-osba</h1>
+                <h4>Átváltás menete:</h4>
+                <ol class="menet">
+                    <li class="lepes">Készítsünk egy 2-oszlopos táblázatot</li>
+                    <li class="lepes">Írjuk fel a számot a bal felső sarokba</li>
+                    <li class="lepes">Osszuk el a számot 16-tal</li>
+                    <li class="beljebb">Az osztás eredményét írjuk a szám alá</li>
+                    <li class="beljebb">Az osztás maradékát írjuk a szám mellé</li>
+                    <li class="lepes">Az osztást ismételgessük, amíg a baloldalon 0-t nem kapunk</li>
+                    <li class="lepes">A jobb oldali oszlop számjegyeit olvassuk össze lentről felfelé</li>
+                </ol>
+            </div>
+
+            <div class="kep">
+                <img src="./assets/16os.png" alt="szar">
+            </div>
+        </div>
+        <hr>
+        <div class="jobb">
+            <div class="szoveg">
+                <h1>16-os számrenszerből 10-esbe</h1>
+                <h4>Átváltás menete:</h4>
+                <ol class="menet">
+                    <li class="lepes">Írjuk fel az átváltandó számot</li>
+                    <li class="lepes">Írjuk a számjegyek fölé 16 hatványait</li>
+                    <li class="lepes">Szorozzuk össze a számjegyeket a fölöttük lévő hatványokkal</li>
+                    <li class="lepes">Adjuk össze az eredményeket</li>
+                </ol>
+            </div>
+            <div class="kep">
+                <img src="./assets/16os2.png" alt="szar">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
