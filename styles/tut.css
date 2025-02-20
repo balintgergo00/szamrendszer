@@ -12,6 +12,7 @@
   margin-top: 2vw;
    font-family:   'Russo One', sans-serif;
    text-shadow: 0.8vw 1.5vw 2vw #006BB5;
+   margin-bottom: 3vw;
 }   
 
 
@@ -44,8 +45,8 @@ body{
 
 .bal{
 float: left;
-margin-top: 6vw;
-margin-left: 3vw;
+
+margin-left: 4vw;
 
 
 
@@ -58,9 +59,44 @@ color: black;
 list-style-image:none;
 font-size: 2vw;
 font-family:'Russo One', sans-serif ;
+margin-left: 2vw;
 
 }
 
 ul, li {
   list-style-type: none;
+margin-bottom: 3vw;
+}
+
+
+.jobb{
+
+float: right;
+
+margin-right: 4vw;
+
+
+
+}
+
+#kep{
+border-radius: 30px;
+box-shadow:0.8vw 1.5vw 2vw #013357 ;
+}
+
+
+#cim{
+  font-family:'Russo One', sans-serif;
+margin-bottom: 1vw;
+
+text-align: center;
+
+}
+
+
+#feher{
+background-color: rgba(255, 255, 255, 0.6);
+border-radius: 30px;
+
+padding: 1vw;
 }
