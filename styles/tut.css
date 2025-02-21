@@ -4,17 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* text-shadow: 0.8vw 1.5vw 2vw #006BB5; */
 }
-
-#nagy{
-  text-align: center;
-  font-size: 5vw;
-  margin-top: 2vw;
-   font-family:   'Russo One', sans-serif;
-   text-shadow: 0.8vw 1.5vw 2vw #006BB5;
-   margin-bottom: 3vw;
-}   
-
 
 #Vissza{
   transition: 0.3s all;
@@ -37,66 +28,65 @@
  padding: 0.35vw;
 }
 
-body{
-
+body {
+  font-family: 'Poppins', sans-serif;
   background-color: #DAF0FF;
-
+  color: #333;
+  line-height: 1.6;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  font-size: 1.2rem;
 }
 
-.bal{
-float: left;
-
-margin-left: 4vw;
-
-
-
-
+h1, h2{
+  font-family: 'Russo One', sans-serif;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.listaa{
-text-decoration: none;
-color: black;
-list-style-image:none;
-font-size: 2vw;
-font-family:'Russo One', sans-serif ;
-margin-left: 2vw;
-
+.list ul{
+  display:flex;
+  justify-content: space-around;
+  list-style-type: none;;
 }
 
-ul, li {
-  list-style-type: none;
-margin-bottom: 3vw;
+a {
+  color: #6baad4;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: #17181A;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #6baad4;
+  box-shadow: 20px 20px 150px #006BB5;
+  letter-spacing: 3px;
+}
 
 .jobb{
-
-float: right;
-
-margin-right: 4vw;
-
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
 
-#kep{
-border-radius: 30px;
-box-shadow:0.8vw 1.5vw 2vw #013357 ;
+img {
+  height: auto;
+  border-radius: 10px;
 }
 
-
-#cim{
-  font-family:'Russo One', sans-serif;
-margin-bottom: 1vw;
-
-text-align: center;
-
-}
-
-
-#feher{
-background-color: rgba(255, 255, 255, 0.6);
-border-radius: 30px;
-
-padding: 1vw;
+hr{
+  margin: 15px 0;
 }
