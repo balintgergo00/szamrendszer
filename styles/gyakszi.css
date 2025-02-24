@@ -45,48 +45,6 @@
     margin-top: 0.8vw;  
 }
 
-/*
-
-hr{
-    height: 800px;
-    width: 0.1vw;
-    margin-top: 50px;
-}
-
-.container {
-    display: flex;
-  }
-  
-  .bal, .jobb{
-    width: 50%;
-    padding: 0 3vw;
-    margin-top: 5px;
-  }
-  
-  .container h1{
-    font-size: 2vw;
-    text-align: center;
-    margin-top: 3vw;
-}
-
-.szoveg{
-  height: 250px;
-}
-
-.kep{
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-}
-
-.kep img{
-  border-radius: 50px;
-  box-shadow:5px 5px 70px #263b49, -5px -5px 70px #173c57;
-  width: 350px;
-  height: 300px;
-} */
-
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #DAF0FF;
@@ -142,8 +100,7 @@ img {
   width: 80%;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
-
-  
+  border-radius: 10px;
 }
 #szam[type="number"]::-webkit-inner-spin-button,
 #szam[type="number"]::-webkit-outer-spin-button {
