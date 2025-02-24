@@ -13,35 +13,49 @@
     <script>
         function check(h, k) {
             if (h == "jo") {
-                document.getElementById(k).innerHTML = "A megoldásod tökéletes";
+                setTimeout(() => {
+                    document.getElementById(k).innerHTML = "A megoldásod tökéletes"
+                }, 150);
+                document.getElementById(k).style.width = "10%";
+                document.getElementById(k).style.backgroundColor = "green";
+
             } else {
-                document.getElementById(k).innerHTML = "A megoldásod nem helyes";
+                setTimeout(() => {
+                    document.getElementById(k).innerHTML = "A megoldásod nem helyes"
+                }, 150);
+                document.getElementById(k).style.width = "10%";
+                document.getElementById(k).style.backgroundColor = "red";
+
             }
 
         }
         function myFunction(b, C) {
             var x = document.getElementById("szam").value;
             if (x == b) {
-                document.getElementById(C).innerHTML = "Talált!";
+                setTimeout(() => {
+                    document.getElementById(C).innerHTML = "A megoldásod tökéletes"
+                }, 150);
+                document.getElementById(C).style.width = "10%";
+                document.getElementById(C).style.backgroundColor = "green";
+
             } else {
-                document.getElementById(C).innerHTML = "A megoldásod nem helyes";
+                setTimeout(() => {
+                    document.getElementById(C).innerHTML = "A megoldásod nem helyes"
+                }, 150);
+                document.getElementById(C).style.width = "10%";
+                document.getElementById(C).style.backgroundColor = "red";
             }
         }
     </script>
     <div class="feladat">
         <h3 class="leiras">Váltsd át a megadott számot kettes Sszámrendszerbe</h3> <br>
         <h1 class="megadottszam">10</h1>
-        <!-- <div class="input"> -->
+        <div class="kaka">
             <input type="number" id="szam" name="szam">
-            <!-- <input type="submit" value="Ellenőrzés" onclick="myFunction(1010, 'Eredmény1')" class="bekuld"> -->
-        <!-- </div> -->
-
-        <input type="submit" value="Ellenőrzés" onclick="myFunction(1010, 'Eredmény1')" class="bekuld"> <!-- myfunction(helyes eredmény, hol írja ki) -->
-        
-            <p id="Eredmény1"></p>
-            
-        
-
+            <input type="submit" value="Ellenőrzés" onclick="myFunction(1010, 'Eredmény1')" class="bekuld">
+            <!-- myfunction(helyes eredmény, hol írja ki) -->
+        </div>
+        <p id="Eredmény1" class="eredmény"></p>
 
     </div>
 
@@ -53,7 +67,7 @@
         <button onclick="check('rossz', 'Eredmény2')" class="gombi">8976</button>
         <button onclick="check('rossz', 'Eredmény2')" class="gombi">656754</button>
         <button onclick="check('rossz', 'Eredmény2')" class="gombi">74754</button>
-        <p id="Eredmény2"></p>
+        <p id="Eredmény2" class="eredmény"></p>
     </div>
 </body>
 
