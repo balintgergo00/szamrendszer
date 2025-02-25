@@ -16,18 +16,16 @@
     font-family: "Poppins", serif;
     display: flex;
     justify-content: center;
+    align-items: space-around;
+    gap: 40px;
 }
   
-.menu li {
-    float: none;
-    margin-right: 40px;
-}
   
 .menu li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 0.7vw 0.8vw;
+    padding: 0.7vw;
     text-decoration: none;
     border-radius: 0.5vw;
     margin-top:0.1vw;
@@ -78,6 +76,12 @@ hr{
   margin: 50px 0;
 }
 
+.kep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img {
   width: 100%;
   border-radius: 10px;
@@ -109,7 +113,7 @@ img {
   }
 #szam[type="number"] {
       -moz-appearance: textfield;
-  }
+}
 
 #szam {
   background-color: #fefeff;
@@ -214,4 +218,67 @@ img {
   /* margin: 0 auto; */
   margin-bottom: 2vw;
   margin-top: 1vw;   
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+    .feladat button {
+      float: left;
+      width: 15%;
+      margin-left: 4%;
+      margin-bottom: 30px;
+    }
+
+    .leiras{
+      font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+  .leiras{
+    font-size: 3vw;
+  }
+
+  .megadottszam {
+  
+    font-size: 3vw;
+    padding: 2vw;
+    width: 8vw;
+    min-width: 4vw;
+    margin: 0 auto;
+    margin-bottom: 1vw;
+  }
+
+.gombi {
+  font-size: 2vw;
+}
+
+.doboz{
+  display: block;
+}
+
+.doboz img{
+  width: 50%;
+  margin-top: 40px;
+}
+
+.eltunik{
+  display: none;
+}
+
+.feladat{
+  height: 40vw;
+}
+
+.menu{
+  gap: 10px;
+}
+
+.csik{
+  display: none;
+}
+
 }
