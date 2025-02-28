@@ -115,7 +115,7 @@ img {
       -moz-appearance: textfield;
 }
 
-#szam {
+#szam, #szam1 {
   background-color: #fefeff;
   color: rgb(94, 86, 86);
   padding: 1vw;
