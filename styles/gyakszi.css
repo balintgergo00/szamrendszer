@@ -170,6 +170,7 @@ img {
   min-width: 4vw;
   border-radius: 2vw;
   margin: 0 auto;
+  box-sizing: unset;
   margin-bottom: 1vw;
 }
 .leiras {

@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Számrendszer átváltó</title>
     <link rel="stylesheet" href="./styles/gyakszi.css">
 </head>
+
 <body>
+    <script>
+        function check(h, k) {
+            if (h == "jo") {
+                setTimeout(() => {
+                    document.getElementById(k).innerHTML = "A megoldásod tökéletes"
+                }, 150);
+                document.getElementById(k).style.width = "40%";
+                document.getElementById(k).style.backgroundColor = "green";
+
+            } else {
+                setTimeout(() => {
+                    document.getElementById(k).innerHTML = "A megoldásod nem helyes"
+                }, 150);
+                document.getElementById(k).style.width = "40%";
+                document.getElementById(k).style.backgroundColor = "red";
+
+            }
+
+        }
+        function myFunction(b, C) {
+            var x = document.getElementById("szam").value;
+            var y = document.getElementById("szam1").value;
+            if (x == b || y == b) {
+                setTimeout(() => {
+                    document.getElementById(C).innerHTML = "A megoldásod tökéletes"
+                }, 150);
+                document.getElementById(C).style.width = "40%";
+                document.getElementById(C).style.backgroundColor = "green";
+
+            }
+             else {
+                setTimeout(() => {
+                    document.getElementById(C).innerHTML = "A megoldásod nem helyes"
+                }, 150);
+                document.getElementById(C).style.width = "40%";
+                document.getElementById(C).style.backgroundColor = "red";
+            }
+        }
+    </script>
     <ul class="menu">
         <li><a href="tutorial.html">FŐOLDAL</a></li>
         <li class="csik">|</li>
@@ -53,6 +94,50 @@
                 <img src="./assets/16os2.png" alt="szar">
             </div>
         </div>
+        <!-- beke  -->
+        <hr>
+
+        <div class="doboz">
+            <div class="feladat">
+                <h3 class="leiras">Váltsd át a megadott számot kettes Számrendszerbe</h3> <br>
+                <h1 class="megadottszam">10</h1>
+                <div class="kaka">
+                    <input type="text" id="szam" name="szam">
+                    <input type="submit" value="Ellenőrzés" onclick="myFunction('A', 'Eredmény1')" class="bekuld">
+                    <!-- myfunction(helyes eredmény, hol írja ki) -->
+                </div>
+                <p id="Eredmény1" class="eredmény"></p>
+
+            </div>
+        </div>
+        <hr>
+        <div class="doboz">
+            <div class="feladat">
+                <h3 class="leiras">Váltsd át a megadott számot kettes Számrendszerbe</h3> <br>
+                <h1 class="megadottszam">99</h1>
+                <div class="kaka">
+                    <input type="text" id="szam1" name="szam">
+                    <input type="submit" value="Ellenőrzés" onclick="myFunction('63', 'Eredmény3')" class="bekuld">
+                    <!-- myfunction(helyes eredmény, hol írja ki) -->
+                </div>
+                <p id="Eredmény3" class="eredmény"></p>
+
+            </div>
+        </div>
+        <hr>
+        <div class="doboz">
+            <div class="feladat">
+                <h3 class="leiras">Melyik ez a szám a kettes számrendszerben?</h2>
+                    <h1 class="megadottszam">129</h1>
+                    <button onclick="check('rossz', 'Eredmény2')" class="gombi">37A</button>
+                    <button onclick="check('rossz', 'Eredmény2')" class="gombi">65</button>
+                    <button onclick="check('rossz', 'Eredmény2')" class="gombi">A1C4</button>
+                    <button onclick="check('rossz', 'Eredmény2')" class="gombi">57</button>
+                    <button onclick="check('jo', 'Eredmény2')" class="gombi">81</button>
+                    <p id="Eredmény2" class="eredmény"></p>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>

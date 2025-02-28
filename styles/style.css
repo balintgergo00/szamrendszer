@@ -106,9 +106,12 @@ button{
     cursor: pointer;
     position:static;
     background-color: #577dc9;
+    text-align: center;
+    box-sizing: unset;
     border: none;
-    width: 2.3vw;
-    height: 2.3vw;
+    width: 1vw;
+    height: 1vw;
+    padding: 1vw;
     font-size: 1vw;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -137,6 +140,7 @@ button{
     main{
         width: 300px;
         height: 500px;
+
     }
     
     .container{

@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="./styles/gyakszi.css">
 </head>
 <body>
+    <script>
+        function check(h, k) {
+           if (h == "jo") {
+              setTimeout(() => {
+                 document.getElementById(k).innerHTML = "A megoldásod tökéletes"
+              }, 150);
+              document.getElementById(k).style.width = "40%";
+              document.getElementById(k).style.backgroundColor = "green";
+  
+           } else {
+              setTimeout(() => {
+                 document.getElementById(k).innerHTML = "A megoldásod nem helyes"
+              }, 150);
+              document.getElementById(k).style.width = "40%";
+              document.getElementById(k).style.backgroundColor = "red";
+  
+           }
+  
+        }
+        function myFunction(b, C) {
+           var x = document.getElementById("szam").value;
+           if (x == b) {
+              setTimeout(() => {
+                 document.getElementById(C).innerHTML = "A megoldásod tökéletes"
+              }, 150);
+              document.getElementById(C).style.width = "40%";
+              document.getElementById(C).style.backgroundColor = "green";
+  
+           } else {
+              setTimeout(() => {
+                 document.getElementById(C).innerHTML = "A megoldásod nem helyes"
+              }, 150);
+              document.getElementById(C).style.width = "40%";
+              document.getElementById(C).style.backgroundColor = "red";
+           }
+        }
+     </script>
     <ul class="menu">
         <li><a href="tutorial.html">FŐOLDAL</a></li>
         <li class="csik">|</li>
@@ -53,6 +90,34 @@
                 <img src="./assets/8as2.png" alt="szar">
             </div>
         </div>
+        <!-- beke  -->
+<hr>
+      <div class="doboz">
+        <div class="feladat">
+           <h3 class="leiras">Váltsd át a megadott számot kettes Számrendszerbe</h3> <br>
+           <h1 class="megadottszam">21</h1>
+           <div class="kaka">
+              <input type="number" id="szam" name="szam">
+              <input type="submit" value="Ellenőrzés" onclick="myFunction(25, 'Eredmény1')" class="bekuld">
+              <!-- myfunction(helyes eredmény, hol írja ki) -->
+           </div>
+           <p id="Eredmény1" class="eredmény"></p>
+
+        </div>
+     </div>
+     <hr>
+     <div class="doboz">
+        <div class="feladat">
+           <h3 class="leiras">Melyik ez a szám a kettes számrendszerben?</h2>
+           <h1 class="megadottszam">80</h1>
+           <button onclick="check('rossz', 'Eredmény2')" class="gombi">110</button>
+           <button onclick="check('rossz', 'Eredmény2')" class="gombi">80</button>
+           <button onclick="check('rossz', 'Eredmény2')" class="gombi">10</button>
+           <button onclick="check('jo', 'Eredmény2')" class="gombi">120</button>
+           <button onclick="check('rossz', 'Eredmény2')" class="gombi">100</button>
+           <p id="Eredmény2" class="eredmény"></p>
+        </div>
+     </div>
     </div>
 </body>
 </html>

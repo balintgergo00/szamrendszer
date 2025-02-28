@@ -23,8 +23,8 @@ from.addEventListener("input", function () {
 let fromValue;
 document.getElementById("convert-button").addEventListener("click", function () {
    switch (fromNS) {
-      case fromNS = "69":
-         window.location.href = "mucsi.html";
+      // case fromNS = "69":
+      //    window.location.href = "mucsi.html";
       case "Bináris":
          fromValue = from.value;
          if (/^[01]*$/.test(fromValue)) {
