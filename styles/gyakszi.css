@@ -194,6 +194,7 @@ img {
   cursor: pointer;
   font-weight:bold;
   font-size: 1vw;
+  margin-bottom: 1vw;
 }
 .gombi:hover {
   background-color: #124163;
@@ -220,7 +221,12 @@ img {
   margin-bottom: 2vw;
   margin-top: 1vw;   
 }
-
+.jo {
+  border: 0.3vw solid rgb(28, 142, 28);
+}
+.rossz {
+  border: 0.3vw solid rgb(146, 4, 4);
+}
 
 
 /* responsive */
