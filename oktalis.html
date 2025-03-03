@@ -10,20 +10,20 @@
     <script>
         function check(h, k) {
            if (h == "jo") {
-            //   setTimeout(() => {
-            //      document.getElementById(k).innerHTML = "A megoldásod tökéletes"
-            //   }, 150);
-            //   document.getElementById(k).style.width = "40%";
-            //   document.getElementById(k).style.backgroundColor = "green";
-            document.getElementById(k).className= 'gombi jo'
+              setTimeout(() => {
+                 document.getElementById(k).innerHTML = "A megoldásod tökéletes"
+              }, 150);
+              document.getElementById(k).style.width = "40%";
+              document.getElementById(k).style.backgroundColor = "green";
+            // document.getElementById(k).className= 'gombi jo'
   
            } else {
-            //   setTimeout(() => {
-            //      document.getElementById(k).innerHTML = "A megoldásod nem helyes"
-            //   }, 150);
-            //   document.getElementById(k).style.width = "40%";
-            //   document.getElementById(k).style.backgroundColor = "red";
-            document.getElementById(k).className= 'gombi rossz'
+              setTimeout(() => {
+                 document.getElementById(k).innerHTML = "A megoldásod nem helyes"
+              }, 150);
+              document.getElementById(k).style.width = "40%";
+              document.getElementById(k).style.backgroundColor = "red";
+            // document.getElementById(k).className= 'gombi rossz'
            }
   
         }
@@ -112,17 +112,17 @@
         <div class="feladat">
            <h3 class="leiras">Melyik ez a szám a nyolcas számrendszerben?</h2>
            <h1 class="megadottszam">80</h1>
-           <!-- <button onclick="check('rossz', 'Eredmény2')" class="gombi">110</button>
+           <button onclick="check('rossz', 'Eredmény2')" class="gombi">110</button>
            <button onclick="check('rossz', 'Eredmény2')" class="gombi">80</button>
            <button onclick="check('rossz', 'Eredmény2')" class="gombi">10</button>
            <button onclick="check('jo', 'Eredmény2')" class="gombi">120</button>
-           <button onclick="check('rossz', 'Eredmény2')" class="gombi">100</button> -->
-           <button onclick="check('rossz', '1')" class="gombi" id="1">110</button>
+           <button onclick="check('rossz', 'Eredmény2')" class="gombi">100</button>
+           <!-- <button onclick="check('rossz', '1')" class="gombi" id="1">110</button>
            <button onclick="check('rossz', '2')" class="gombi" id="2">80</button>
            <button onclick="check('rossz', '3')" class="gombi" id="3">10</button>
            <button onclick="check('jo', '4')" class="gombi" id="4">120</button>
-           <button onclick="check('rossz', '5')" class="gombi" id="5">100</button>
-           <!-- <p id="Eredmény2" class="eredmény"></p> -->
+           <button onclick="check('rossz', '5')" class="gombi" id="5">100</button> -->
+           <p id="Eredmény2" class="eredmény"></p>
         </div>
      </div>
     </div>
